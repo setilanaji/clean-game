@@ -1,0 +1,5 @@
+language: swift
+osx_image: xcode13.1
+xcode_project: Clean\ Game.xcodeproj
+xcode_scheme: Clean\ Game
+xcode_destination: platform=iOS Simulator,OS=15.0,name=iPhone 11 Pro
