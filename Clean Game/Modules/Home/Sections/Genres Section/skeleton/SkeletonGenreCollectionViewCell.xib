@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SolusiSans-SemiBold.ttf">
+            <string>SolusiSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SkeletonGenreCollectionViewCell" customModule="Clean_Game" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="146" height="175"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="146" height="175"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKI-Xe-h7Z">
+                        <rect key="frame" x="0.0" y="0.0" width="146" height="175"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hV-dI-Ptg" customClass="CornerRoundingView" customModule="SwiftMessages">
+                                <rect key="frame" x="0.0" y="0.0" width="146" height="146"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G7I-cL-wAG" customClass="RoundImageView" customModule="Clean_Game" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-8" width="146" height="146"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="G7I-cL-wAG" secondAttribute="height" multiplier="75:75" id="7up-mf-WJk"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="skeletonCornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="withShimmer" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="G7I-cL-wAG" firstAttribute="top" secondItem="5hV-dI-Ptg" secondAttribute="top" constant="-8" id="6Td-wK-zql"/>
+                                    <constraint firstItem="G7I-cL-wAG" firstAttribute="bottom" secondItem="5hV-dI-Ptg" secondAttribute="bottom" constant="-8" id="6he-cm-WL4"/>
+                                    <constraint firstAttribute="trailing" secondItem="G7I-cL-wAG" secondAttribute="trailing" id="KFZ-5S-f1X"/>
+                                    <constraint firstItem="G7I-cL-wAG" firstAttribute="leading" secondItem="5hV-dI-Ptg" secondAttribute="leading" id="nat-jz-fEn"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundsLeadingCorners" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Lg-u9-Ptq">
+                                <rect key="frame" x="0.0" y="163" width="146" height="12"/>
+                                <fontDescription key="fontDescription" name="SolusiSans-SemiBold" family="Solusi Sans" pointSize="10"/>
+                                <color key="textColor" name="Black-80"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="skeletonLineSpacing">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="withShimmer" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5hV-dI-Ptg" firstAttribute="top" secondItem="dKI-Xe-h7Z" secondAttribute="top" id="P2B-DA-fH2"/>
+                            <constraint firstAttribute="trailing" secondItem="5hV-dI-Ptg" secondAttribute="trailing" id="UJQ-ZZ-Mha"/>
+                            <constraint firstAttribute="bottom" secondItem="6Lg-u9-Ptq" secondAttribute="bottom" id="WAJ-xd-zn8"/>
+                            <constraint firstAttribute="trailing" secondItem="6Lg-u9-Ptq" secondAttribute="trailing" id="bnm-Qs-OyK"/>
+                            <constraint firstItem="5hV-dI-Ptg" firstAttribute="leading" secondItem="dKI-Xe-h7Z" secondAttribute="leading" id="c2d-ME-649"/>
+                            <constraint firstItem="6Lg-u9-Ptq" firstAttribute="leading" secondItem="dKI-Xe-h7Z" secondAttribute="leading" id="kr5-id-bwt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="dKI-Xe-h7Z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="PdS-j3-REl"/>
+                <constraint firstAttribute="bottom" secondItem="dKI-Xe-h7Z" secondAttribute="bottom" id="a0d-iF-WX4"/>
+                <constraint firstItem="dKI-Xe-h7Z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="nW1-HO-6aA"/>
+                <constraint firstAttribute="trailing" secondItem="dKI-Xe-h7Z" secondAttribute="trailing" id="wQe-Q3-8eh"/>
+            </constraints>
+            <size key="customSize" width="146" height="175"/>
+            <connections>
+                <outlet property="backgroundImage" destination="5hV-dI-Ptg" id="Qp9-Tq-Pwt"/>
+                <outlet property="categoryName" destination="6Lg-u9-Ptq" id="wF4-jE-wKJ"/>
+                <outlet property="image" destination="G7I-cL-wAG" id="gVK-TZ-PW7"/>
+            </connections>
+            <point key="canvasLocation" x="207.24637681159422" y="122.20982142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Black-80">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

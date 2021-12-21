@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GenreCollectionViewCell" customModule="Clean_Game" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="114" height="129"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="114" height="129"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8K4-8e-SfH">
+                        <rect key="frame" x="0.0" y="0.0" width="114" height="129"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Itm-kJ-60X" customClass="CornerRoundingView" customModule="SwiftMessages">
+                                <rect key="frame" x="0.0" y="0.0" width="114" height="114"/>
+                                <color key="backgroundColor" name="BG-2"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundsLeadingCorners" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tmq-lE-bbo" customClass="RoundImageView" customModule="Clean_Game" customModuleProvider="target">
+                                <rect key="frame" x="16" y="16" width="82" height="82"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tmq-lE-bbo" secondAttribute="height" multiplier="75:75" id="MO8-DJ-JvW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="skeletonCornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="withShimmer" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJ5-Wv-sPf">
+                                <rect key="frame" x="41" y="122" width="32.5" height="17"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="skeletonLineSpacing">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="withShimmer" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="Color-Background"/>
+                        <constraints>
+                            <constraint firstItem="tmq-lE-bbo" firstAttribute="top" secondItem="8K4-8e-SfH" secondAttribute="top" constant="16" id="1En-de-Kty"/>
+                            <constraint firstItem="oJ5-Wv-sPf" firstAttribute="top" secondItem="Itm-kJ-60X" secondAttribute="bottom" constant="8" id="5bZ-wr-Lsi"/>
+                            <constraint firstItem="Itm-kJ-60X" firstAttribute="top" secondItem="8K4-8e-SfH" secondAttribute="top" id="Dd8-ER-iYe"/>
+                            <constraint firstItem="tmq-lE-bbo" firstAttribute="leading" secondItem="8K4-8e-SfH" secondAttribute="leading" constant="16" id="Odt-LM-fi6"/>
+                            <constraint firstItem="Itm-kJ-60X" firstAttribute="bottom" secondItem="tmq-lE-bbo" secondAttribute="bottom" constant="16" id="YFZ-0g-g7r"/>
+                            <constraint firstItem="oJ5-Wv-sPf" firstAttribute="centerX" secondItem="8K4-8e-SfH" secondAttribute="centerX" id="dd8-Jx-8AQ"/>
+                            <constraint firstItem="Itm-kJ-60X" firstAttribute="leading" secondItem="8K4-8e-SfH" secondAttribute="leading" id="njs-32-SeV"/>
+                            <constraint firstAttribute="trailing" secondItem="Itm-kJ-60X" secondAttribute="trailing" id="spu-lb-3vE"/>
+                            <constraint firstAttribute="bottom" secondItem="oJ5-Wv-sPf" secondAttribute="bottom" priority="250" id="u6a-mc-T5g"/>
+                            <constraint firstAttribute="trailing" secondItem="tmq-lE-bbo" secondAttribute="trailing" constant="16" id="ulK-KZ-hmk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="8K4-8e-SfH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UXj-RJ-P22"/>
+                <constraint firstAttribute="bottom" secondItem="8K4-8e-SfH" secondAttribute="bottom" id="gh3-w2-01u"/>
+                <constraint firstItem="8K4-8e-SfH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gzN-oB-ryq"/>
+                <constraint firstAttribute="trailing" secondItem="8K4-8e-SfH" secondAttribute="trailing" id="lqz-go-uNH"/>
+            </constraints>
+            <size key="customSize" width="114" height="129"/>
+            <connections>
+                <outlet property="backgroundImage" destination="Itm-kJ-60X" id="z7S-rE-Ii2"/>
+                <outlet property="genreImage" destination="tmq-lE-bbo" id="QxR-s3-qrA"/>
+                <outlet property="genreName" destination="oJ5-Wv-sPf" id="hqV-hS-qW0"/>
+            </connections>
+            <point key="canvasLocation" x="184.05797101449278" y="96.09375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="BG-2">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color-Background">
+            <color red="0.96399998664855957" green="0.96899998188018799" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutViewController" customModule="Clean_Game" customModuleProvider="target">
+            <connections>
+                <outlet property="userEmailField" destination="u2F-DG-FEi" id="9g0-cd-83b"/>
+                <outlet property="userImage" destination="TlC-jy-9yU" id="Q6j-qf-QXd"/>
+                <outlet property="userNameField" destination="bhs-Mn-nDg" id="GON-xh-iCP"/>
+                <outlet property="view" destination="iN0-l3-epB" id="DAx-qI-SIW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cH8-oT-oEc">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUq-tr-EXU">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="388"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TlC-jy-9yU" customClass="RoundImageView" customModule="Clean_Game" customModuleProvider="target">
+                                    <rect key="frame" x="157" y="50" width="100" height="100"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="mnW-Ar-sWX"/>
+                                        <constraint firstAttribute="height" constant="100" id="zlO-m3-V1e"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="50"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRm-La-EgR">
+                                    <rect key="frame" x="16" y="274.5" width="382" height="21.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nama kamu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bhs-Mn-nDg">
+                                    <rect key="frame" x="16" y="224.5" width="382" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZc-0u-SRz">
+                                    <rect key="frame" x="16" y="195" width="382" height="21.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email kamu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u2F-DG-FEi">
+                                    <rect key="frame" x="16" y="304" width="382" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="bhs-Mn-nDg" firstAttribute="leading" secondItem="bUq-tr-EXU" secondAttribute="leading" constant="16" id="9ZT-Mg-JTy"/>
+                                <constraint firstItem="u2F-DG-FEi" firstAttribute="top" secondItem="FRm-La-EgR" secondAttribute="bottom" constant="8" id="9hO-jv-We8"/>
+                                <constraint firstItem="TlC-jy-9yU" firstAttribute="top" secondItem="bUq-tr-EXU" secondAttribute="top" constant="50" id="9oj-d2-Yd5"/>
+                                <constraint firstItem="FRm-La-EgR" firstAttribute="leading" secondItem="bUq-tr-EXU" secondAttribute="leading" constant="16" id="Sse-eq-m3u"/>
+                                <constraint firstItem="YZc-0u-SRz" firstAttribute="top" secondItem="TlC-jy-9yU" secondAttribute="bottom" constant="45" id="TYT-qH-B38"/>
+                                <constraint firstAttribute="trailing" secondItem="bhs-Mn-nDg" secondAttribute="trailing" constant="16" id="Ve4-Wg-0sE"/>
+                                <constraint firstAttribute="bottom" secondItem="u2F-DG-FEi" secondAttribute="bottom" constant="50" id="a6v-2A-yPp"/>
+                                <constraint firstItem="YZc-0u-SRz" firstAttribute="leading" secondItem="bUq-tr-EXU" secondAttribute="leading" constant="16" id="aIu-lV-Pxn"/>
+                                <constraint firstItem="FRm-La-EgR" firstAttribute="top" secondItem="bhs-Mn-nDg" secondAttribute="bottom" constant="16" id="f2z-8m-Igj"/>
+                                <constraint firstItem="TlC-jy-9yU" firstAttribute="centerX" secondItem="bUq-tr-EXU" secondAttribute="centerX" id="ilL-6J-Aep"/>
+                                <constraint firstItem="bhs-Mn-nDg" firstAttribute="top" secondItem="YZc-0u-SRz" secondAttribute="bottom" constant="8" id="kob-6E-qIZ"/>
+                                <constraint firstItem="u2F-DG-FEi" firstAttribute="leading" secondItem="bUq-tr-EXU" secondAttribute="leading" constant="16" id="kql-UQ-8vD"/>
+                                <constraint firstAttribute="trailing" secondItem="FRm-La-EgR" secondAttribute="trailing" constant="16" id="kxk-lz-T5X"/>
+                                <constraint firstAttribute="trailing" secondItem="YZc-0u-SRz" secondAttribute="trailing" constant="16" id="p23-Ia-mEB"/>
+                                <constraint firstAttribute="trailing" secondItem="u2F-DG-FEi" secondAttribute="trailing" constant="16" id="ue9-rZ-DGO"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="bUq-tr-EXU" firstAttribute="leading" secondItem="cH8-oT-oEc" secondAttribute="leading" id="6Xg-9a-0aH"/>
+                        <constraint firstItem="bUq-tr-EXU" firstAttribute="top" secondItem="cH8-oT-oEc" secondAttribute="top" id="Dzk-30-K6y"/>
+                        <constraint firstItem="bUq-tr-EXU" firstAttribute="width" secondItem="cH8-oT-oEc" secondAttribute="width" id="apd-ZL-P3v"/>
+                        <constraint firstItem="bUq-tr-EXU" firstAttribute="trailing" secondItem="cH8-oT-oEc" secondAttribute="trailing" id="jJE-Rz-w1T"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="cH8-oT-oEc" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="0L4-gT-JOr"/>
+                <constraint firstItem="cH8-oT-oEc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="7Dm-h8-bIR"/>
+                <constraint firstItem="cH8-oT-oEc" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ivW-ES-6dv"/>
+                <constraint firstItem="cH8-oT-oEc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="r3m-kV-Czd"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="65.625"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
